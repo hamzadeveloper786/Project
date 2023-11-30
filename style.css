@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+div#top > nav{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #F6F6F6;
+}
+div#top > nav > ul{
+    display: flex;
+}
+div#top > nav > ul > li{
+    list-style-type: none;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 0.5em;
+}
+div#intro > div#intro-pic{
+    background-image: url(./web-intro-pic.webp);
+    background-size: cover;
+    height: 110vh;
+}
+div#intro > div#intro-pic > h1{
+    width: 45rem;
+    object-fit: fill;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: auto;
+    padding-top: 18rem;
+    padding-right: 15%;
+    display: flex;
+    position: relative;
+    text-shadow: 5px 3px 6px rgba(0, 0, 0, .15);
+    color: white;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 2rem;
+}
+div#about{
+    display: flex;
+    flex-direction: row;
+}
+div#about > div#about-intro{
+    background-color: #F6F6F6;
+    padding: 6em;
+    padding-bottom: 0;
+}
+div#about > div#about-intro > h2{
+    letter-spacing: .07rem;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #A9A19B;
+}
+div#about > div#about-intro > p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-top: 2.5rem;
+    color: #A9A19B;
+}
+div#about > img{
+    height: 100vh;
+}
+div#remaining{
+    display: flex;
+    flex-direction: row;
+}
+div#remaining > img{
+    height: 104vh;
+    width: 58%;
+}
+div#remaining > div#remaining-intro{
+    background-color: #A9A19B;
+    padding: 6em;
+    padding-bottom: 0;
+}
+div#remaining > div#remaining-intro > h2{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #F6F6F6;
+}
+div#remaining > div#remaining-intro > p{
+    color: #F6F6F6;
+    word-spacing: 0.2rem;
+    margin-top: 2rem;
+    line-height: 1.2;
+    font-size: 1.2em;
+}
+div#join > div#join-form{
+    background-image: url(./connectUs.avif);
+    height: 120vh;
+    background-position: 50%;
+    background-size: cover;
+    align-items: center;
+    padding-left: 16%;
+    padding-right: 10%;
+    display: flex;
+    opacity: 0.8;
+}
+div#join > div#join-form > div > h2{
+    letter-spacing: .07rem;
+    font-size: 3rem;
+    color: #F6F6F6;
+    font-weight: 400;
+    line-height: 1.15;
+}
+div#join > div#join-form > div > form{
+    padding: 1.5em;
+}
+div#join > div#join-form > div > form input{
+    padding: 0.5em;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #F6F6F6;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #F6F6F6;
+}
+div#join > div#join-form > div > form label{
+    font-size: 1.5rem;
+    color: #000000;
+}
+div#join > div#join-form > div > form button{
+    margin: 0.2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1em;
+    padding-bottom: 1rem;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+div#join > div#join-form > div > form button:hover{
+    background-color: #A9A19B;
+}
+div#connect{
+    background-color: #393839;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div#connect > div#head{
+    margin-top: 5em;
+}
+div#connect > div#head > h2{
+    color: #F6F6F6;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.15;
+}
+div#connect > div#head > p{
+    margin-top: 3em;
+    color: #A9A19B;
+}
+div#connect > form{
+    margin-top: 5em;
+}
+div#connect > form > input{
+    color: #A9A19B;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #A9A19B;padding: 0.5em;
+    margin: 0.5em;
+    font-size: 1.2em;
+}
+div#connect > form > textarea{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #A9A19B;
+}
+div#connect > form > button{
+    float: right;
+    margin: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: transparent;
+    border: 1px solid #A9A19B;
+    color: #F6F6F6;
+    border-radius: 0.3em;
+}
+div#connect > form > button:hover{
+    border: 1px solid #F6F6F6;
+    background-color: #A9A19B;
+}
+div#footer{
+    height: 20em;
+    background-color: #393839;
+}
+@media only screen and (max-width:700px) {
+    div#about{
+        flex-wrap: wrap;
+    }
+    div#remaining{
+        flex-wrap: wrap;
+    }
+}
